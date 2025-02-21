@@ -5,7 +5,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     transition: 0.5s ease-in-out;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Cairo", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -59,30 +59,13 @@ h3 {
     color: black;
 }
 
-/* fonts */
-@font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-Medium.ttf);
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url(../fonts/Raleway-SemiBold.ttf);
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url(../fonts/Raleway-Bold.ttf);
-    font-weight: bold;
-}
 /* authorization */
 
 form{
     display: flex;
     margin: 100px auto;
     border-radius: 46px;
+    font-family: "Raleway", sans-serif;
     width: 435px;
     padding: 50px 40px;
     gap: 50px; 
@@ -153,7 +136,6 @@ form{
     border-radius: 16px;
     background-color: white;
     border: 4px solid black;
-
     h2{
         font-family: "Cairo", sans-serif;
         font-weight: bold;
@@ -161,7 +143,6 @@ form{
         color: black;
         font-size: 40px;
     }
-
     >div{
         width: 90%;
         display: flex;
@@ -571,4 +552,3 @@ footer .container {
             gap: 10px;
         }
     }
-
