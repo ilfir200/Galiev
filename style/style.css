@@ -18,7 +18,7 @@
     --bg_color_firs: #000000; 
     --bg_color_sec: #DDA972; 
     --avtive_color:#B88B46; 
-    --font:"Unbounded"; 
+    
 }
 
 .container {
@@ -27,7 +27,7 @@
 }
 
 .btn {
-    padding: 17px 22px;
+    padding: 12px 18px;
     font-family: "Raleway", sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -63,7 +63,7 @@ h3 {
 
 form{
     display: flex;
-    margin: 100px auto;
+    margin: 50px auto;
     border-radius: 46px;
     font-family: "Raleway", sans-serif;
     width: 435px;
@@ -94,6 +94,7 @@ form{
     }
     ::placeholder{
         color: var(--main_color);
+        font-size: 16px;
     }
     .button{
         width: 345px;
@@ -112,7 +113,8 @@ form{
         font-weight: 200;
     }
     .reg_button{
-        margin-top: -28px;
+        margin-top: -38px;
+        font-size: 20px;
         text-decoration: underline;
         color: white;
     }
@@ -137,7 +139,6 @@ form{
     background-color: white;
     border: 4px solid black;
     h2{
-        font-family: "Cairo", sans-serif;
         font-weight: bold;
         font-style: normal;
         color: black;
@@ -169,7 +170,6 @@ form{
                 outline: none;
                 padding-left: 20px;
                 color: black;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }
             >div{
                 display: flex;
@@ -179,7 +179,6 @@ form{
                 >p{
                     margin-left: 20px;
                     color: black;
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 }
             }
             input[type='checkbox']{
@@ -193,7 +192,7 @@ form{
                 height: 40px;
                 background-color: white;
                 border-radius: 8px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              
                 font-weight: 700;
                 font-size: 24px;
             }
@@ -203,7 +202,7 @@ form{
             }
             >input::placeholder{
                 color: black;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
             }
         }
     }
@@ -301,6 +300,9 @@ form{
             }
             .detailed{
                 padding: 12px 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border-radius: 17px;
                 background-color: #F4A261;
                 border: 3px solid #060852;
@@ -309,11 +311,14 @@ form{
                 font-style: normal;
                 font-size: 18px;
                 color: white;
-                width: 200px;
+                width: 287px;
             }
             .book{
-                width: 270px;
-                border-radius: 31px;
+                width: 287px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 17px;
                 border: none;
                 box-shadow: 0 0 2px white;
                 padding: 12px 42px;
@@ -471,9 +476,6 @@ form{
 
 
 /* footer */
-footer {
-    padding: 0 0 40px;
-}
 
 footer .container {
     display: flex;
@@ -526,14 +528,14 @@ footer .container {
 .other-footer-block {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 320px;
+    justify-content: space-between;
+    
     background: transparent;
 }
 
 .other-footer-block a {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     background: transparent;
     color: black;
 }
@@ -552,3 +554,128 @@ footer .container {
             gap: 10px;
         }
     }
+
+
+.Itemheader{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h3{
+        font-size: 16px;
+    }
+    h2{
+        color: black;
+        font-size: 34px;
+    }
+    .ItemheaderText{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        div{
+            display: flex;
+            gap: 36px;
+            align-items: center;
+            img{
+                cursor: pointer;
+            }
+            .btn2{
+                padding: 15px 20px;
+                display: flex;
+                background-color: #DC0000;
+                border-radius: 14px;
+                font-size: 17px;
+                color: white;
+            }
+        }
+    }
+    .Itemheaderinformation{
+        display: flex;
+        padding-top: 10px;
+        gap: 33px;
+        .reiting{
+            display: flex;
+            gap: 9px;
+            align-items: center;
+        }
+        .metro{
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .geo{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+    }
+}
+.ItemImgs{
+    padding-top: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    .ItemImgs4{
+        display: flex;
+        flex-wrap: wrap;
+        width: 478px;
+        gap: 12px;
+    }
+    .imgs1{
+        border-radius: 14px 0 0 14px;   
+    }
+    .imgs2{
+        border-radius: 0 14px 0 0;   
+    }
+    .imgs4{
+        border-radius: 0 0 14px 0;   
+    }
+
+}
+.Itemuslugi{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding-top: 22px;
+    h2{
+        font-size: 34px;
+        color:black;
+    }
+    .ItemuslugiCatalog{
+        width: 1000px;
+        padding: 18px;
+        border-radius: 28px;
+        display: grid;
+        grid-template-columns: repeat(3,320px);
+        grid-gap: 24px 12px;
+        box-shadow: 0 0 16px black;
+        div{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+}
+.ItemInformation{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    h2{
+            font-size: 34px;
+            color:black;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 1000px;
+        box-shadow: 0 0 16px black;
+        padding: 21px 18px;
+        border-radius: 28px;
+    }
+}
+.Itemcontainer{
+    width: 1000px;
+    margin: 0 auto;
+}
