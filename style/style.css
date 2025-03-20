@@ -1135,18 +1135,17 @@ footer .container {
         .header-menu{
             position: fixed;
             top: 0;
-            width: 100%;
+            width: 90%;
             background-color: white;
-            display: flex;
             flex-direction: column;
             gap: 20px;
             align-items: center;
             padding: 20px 0;
-            z-index: 99999;
+          
         }
     
         #burger:checked + label + .header-menu{
-            display: block;
+            display: flex;
         }
     
         #burger:checked + [for=burger]::before{
@@ -1162,6 +1161,181 @@ footer .container {
             }
             100%{
                 opacity: 1;
+            }
+        }
+    }
+
+@media screen and (max-width: 600px){
+        .container {
+            margin: 0 auto;
+            width: 100%;
+        }
+        .btn{
+            font-size: 16px;
+        }
+        .TovarCatalog{
+            margin-top: 60px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            .TovarText{
+                font-family: "Cairo", sans-serif;
+                font-weight: 200;
+                font-style: normal;
+                font-size: 20px;
+                color: white;
+                padding: 0 0 30px 0;
+            }
+            h2{
+                font-family: "Cairo", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: bold;
+                font-style: normal;
+                color: black;
+                font-size: 40px;
+            }
+            .Catalog{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 30px;
+                margin: 0 auto;
+                .CatalogItem{
+                    display: flex;
+                    background: black;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 20px;
+                    height: 500px;
+                    justify-content: space-evenly;
+                    h3{
+                        font-family: "Cairo", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: bold;
+                        font-style: normal; 
+                        font-size: 30px;
+                        color: white;
+                        height: 35px;
+                    }
+                    p{
+                        font-family: "Cairo", sans-serif;
+                        font-weight: 200;
+                        font-style: normal;
+                        font-size: 18px;
+                        color: white;
+                    }
+                    .detailed{
+                        padding: 12px 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 17px;
+                        background-color: #F4A261;
+                        border: 3px solid #060852;
+                        font-family: "Cairo", sans-serif;
+                        font-weight: bold;
+                        font-style: normal;
+                        font-size: 18px;
+                        color: white;
+                        width: 287px;
+                    }
+                    .book{
+                        width: 287px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 17px;
+                        border: none;
+                        box-shadow: 0 0 2px white;
+                        padding: 12px 42px;
+                        background-color: #EA3332;
+                        color: white;
+                        font-family: "Cairo", sans-serif;
+                        font-weight: bold;
+                        font-style: normal;
+                        font-size: 22px;
+                    }
+                }
+            
+            }
+        }
+
+        .Banner{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .BannerImg{
+                width: 40%;
+                height: auto;
+            }
+            .BannerText{
+                display: flex;
+                gap: 30PX;
+                flex-direction: column;
+                h2{
+                    color: #000000;
+                    font-size: 14px;
+                }
+                h1{
+                    font-size: 20px;
+                }
+              
+                .BannerTextApp{
+                    display: flex;
+                    gap: 12px;
+                  
+                    .BannerTextAppItem{
+                        background-color: #000000;
+                        width: 120px;
+                        height: 60px;
+                        gap: 15px;
+                        border-radius: 8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 12px;
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+           
+        }
+    
+        .folower{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 140px;
+            margin-bottom: 40px;
+            .folowerText{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+            img{
+                width: 40%;
+                height: auto;
+            }
+            h2{
+                color: black;
+                font-size: 35px;
+            }
+            p{
+                color: black;
+                font-size: 20px;
+            }
+            a{
+                color: white;
+                background-color: #DC0000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                height: 40px;
+                font-size: 20px;
+                border-radius: 10px;
             }
         }
     }
